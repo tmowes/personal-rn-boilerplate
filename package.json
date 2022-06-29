@@ -1,0 +1,50 @@
+{
+  "name": "startrnts69",
+  "version": "0.0.1",
+  "private": true,
+  "resolutions": {
+    "@types/react": "^18"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:f": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "uninstall": "adb uninstall com.startrnts69",
+    "pod": "cd ios && pod install && cd .."
+  },
+  "dependencies": {
+    "intl": "^1.2.5",
+    "react": "18.0.0",
+    "react-native": "0.69.1",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-reanimated": "^3.0.0-rc.0",
+    "react-native-svg": "^12.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/runtime": "^7.18.6",
+    "@react-native-community/eslint-config": "^3.0.3",
+    "@types/react-native": "^0.69.1",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "metro-react-native-babel-preset": "^0.71.2",
+    "prettier": "^2.7.1",
+    "react-native-svg-transformer": "^1.0.0",
+    "typescript": "^4.7.4"
+  }
+}
